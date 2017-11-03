@@ -1,0 +1,460 @@
+﻿
+@charset "UTF-8";
+
+/*----------------------
+ Flex View Standards
+----------------------*/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+}
+
+.flex-center{
+	-webkit-justify-content: center;
+    justify-content: center;
+}
+
+.flex-equal{
+	-webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.flex-around{
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.flex-equal-height{
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+.flex-align-top{
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.flex-align-center{
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.flex-align-bottom{
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.flex-align-line{
+    -webkit-align-items: baseline;
+    align-items: baseline;
+}
+
+.flex-nowrap{
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.flex-wrap{
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex-align-content{
+    -webkit-align-content: center;
+    align-content: center;
+	/*
+	stretch - Default value. Lines stretch to take up the remaining space
+	flex-start - Lines are packed toward the start of the flex container
+	flex-end - Lines are packed toward the end of the flex container
+	center - Lines are packed toward the center of the flex container
+	space-between - Lines are evenly distributed in the flex container
+	space-around - Lines are evenly distributed in the flex container, with half-size spaces on either end
+	*/
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .flex-container{
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+
+
+.flex-item {
+	width: 100%;
+	margin:10px;
+}
+
+.flex-vertical{
+	-webkit-flex-direction: column;
+    flex-direction: column;
+	margin:10px;	
+}
+
+.flex-perfect-center{
+	margin: auto;	
+}
+
+.flex-items-1{
+	-webkit-flex: 1;
+    flex: 1;	
+}
+.flex-items-2{
+	-webkit-flex: 2;
+    flex: 2;	
+}
+.flex-items-3{
+	-webkit-flex: 3;
+    flex: 3;	
+}
+.flex-items-4{
+	-webkit-flex: 4;
+    flex: 4;	
+}
+.flex-items-5{
+	-webkit-flex: 5;
+    flex: 5;	
+}
+.flex-items-6{
+	-webkit-flex: 6;
+    flex: 6;	
+}
+.flex-items-7{
+	-webkit-flex: 7;
+    flex: 7;	
+}
+.flex-items-8{
+	-webkit-flex: 8;
+    flex: 8;	
+}
+.flex-items-9{
+	-webkit-flex: 9;
+    flex: 9;	
+}
+.flex-items-10{
+	-webkit-flex: 10;
+    flex: 10;	
+}
+.flex-items-11{
+	-webkit-flex: 11;
+    flex: 11;	
+}
+.flex-items-12{
+	-webkit-flex: 12;
+    flex: 12;	
+}
+
+/*----------------------
+ Grid View Standards
+----------------------*/
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/*----------------------
+ Newspapper Columns
+----------------------*/
+
+.column-2{
+	-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+
+.column-3{
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.column-4{
+	-webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+}
+
+.column-gap-3{ /* space beetwen columns */
+	-webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+}
+
+.column-gap-4{ /* space beetwen columns */
+	-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+
+.column-role-light{ /* vertical-line beetwen columns */
+	-webkit-column-rule: 2px outset #f1f1f1; /* Chrome, Safari, Opera */
+    -moz-column-rule: 2px outset #f1f1f1; /* Firefox */
+    column-rule: 2px outset #f1f1f1;
+	/* outset dotted dashed solid double groove ridge inset */
+}
+
+.column-role-dark{ /* vertical-line beetwen columns */
+	-webkit-column-rule: 2px outset #333; /* Chrome, Safari, Opera */
+    -moz-column-rule: 2px outset #333; /* Firefox */
+    column-rule: 2px outset #333;	
+	/* outset dotted dashed solid double groove ridge inset */
+}
+
+.column-align-auto{
+	-webkit-column-fill: auto; /* Chrome, Safari, Opera */
+    -moz-column-fill: auto; /* Firefox */
+    column-fill: auto;
+}
+
+.column-align-balance{
+	-webkit-column-fill: balance; /* Chrome, Safari, Opera */
+    -moz-column-fill: balance; /* Firefox */
+    column-fill: balance;
+}
+
+
+/*----------------------
+ Font Families
+----------------------*/
+
+.serif-1{font-family: "Times New Roman", Times, serif;}
+.serif-2{font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;}
+.serif-3{font-family: Georgia, serif;}
+.sansserif-1{font-family: Arial, Helvetica, sans-serif;}
+.sansserif-2{font-family: "Arial Black", Gadget, sans-serif;}
+.sansserif-3{font-family: "Comic Sans MS", cursive, sans-serif;}
+.sansserif-4{font-family: Impact, Charcoal, sans-serif;}
+.sansserif-5{font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+.sansserif-6{font-family: Tahoma, Geneva, sans-serif;}
+.sansserif-7{font-family: "Trebuchet MS", Helvetica, sans-serif;}
+.sansserif-8{font-family: Verdana, Geneva, sans-serif;}
+.monospace-1{font-family: "Courier New", Courier, monospace;}
+.monospace-2{font-family: "Lucida Console", Monaco, monospace;}
+
+
+/*----------------------
+ Colors Pallet
+----------------------*/
+/* Main Colors of RGB */
+.red-text		{color:#FF0000;} /* (255,0,0) red */
+.orange-text	{color:#FF8000;} /* (255,128,0) orange */
+.yellow-text	{color:#FFFF00;} /* (255,255,0) yellow */
+.lime-text		{color:#80FF00;} /* (128,255,0) lime */
+.green-text		{color:#00FF00;} /* (0,255,0) green */
+.teal-text		{color:#00FF80;} /* (0,255,80) teal */
+.cyan-text		{color:#00FFFF;} /* (0,255,255) cyan */
+.royal-text		{color:#0080FF;} /* (0,128,255) royal blue */
+.blue-text		{color:#0000FF;} /* (0,0,255) blue */
+.indigo-text	{color:#8000FF;} /* (128,00,255) indigo */
+.magenta-text	{color:#FF00FF;} /* (255,0,255) magenta */
+.pink-text		{color:#FF0080;} /* (255,0,128) pink */
+
+/* Gray Scale Colors */
+.light-text		{color:#F1F1F1;} /* (255,255,255) light */
+.dark-text		{color:#3F3F3F;} /* (255,255,255) dark */
+.white-text		{color:#FFFFFF;} /* (255,255,255) white */
+.gray-text		{color:#888888;} /* (122,122,122) gray */
+.black-text		{color:#000000;} /* (0,0,0) black */
+
+/* Main Background Colors of RGB */
+.red-bg			{background-color:#FF0000;} /* (255,0,0) red */
+.orange-bg		{background-color:#FF8000;} /* (255,128,0) orange */
+.yellow-bg		{background-color:#FFFF00;} /* (255,255,0) yellow */
+.lime-bg		{background-color:#80FF00;} /* (128,255,0) lime */
+.green-bg		{background-color:#00FF00;} /* (0,255,0) green */
+.teal-bg		{background-color:#00FF80;} /* (0,255,80) teal */
+.cyan-bg		{background-color:#00FFFF;} /* (0,255,255) cyan */
+.royal-bg		{background-color:#0080FF;} /* (0,128,255) royal blue */
+.blue-bg		{background-color:#0000FF;} /* (0,0,255) blue */
+.indigo-bg		{background-color:#8000FF;} /* (128,00,255) indigo */
+.magenta-bg		{background-color:#FF00FF;} /* (255,0,255) magenta */
+.pink-bg		{background-color:#FF0080;} /* (255,0,128) pink */
+
+/* Gray Scale Background Colors */
+.light-bg		{background-color:#F1F1F1;} /* (255,255,255) light */
+.dark-bg		{background-color:#3F3F3F;} /* (255,255,255) dark */
+.white-bg		{background-color:#FFFFFF;} /* (255,255,255) white */
+.gray-bg		{background-color:#888888;} /* (122,122,122) gray */
+.black-bg		{background-color:#000000;} /* (0,0,0) black */
+
+
+/*----------------------
+ Image Filters
+----------------------*/
+
+.f-gray:hover{
+	-webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(70%);
+}
+.f-blur:hover{
+	-webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+.f-brightness:hover{
+	-webkit-filter: brightness(200%); /* Safari 6.0 - 9.0 */
+    filter: brightness(200%);
+}
+.f-contrast:hover{
+	-webkit-filter: contrast(200%); /* Safari 6.0 - 9.0 */
+    filter: contrast(200%);
+}
+.f-shadow-light:hover{
+	-webkit-filter: drop-shadow(8px 8px 10px #f1f1f1); /* Safari 6.0 - 9.0 */
+    filter: drop-shadow(8px 8px 10px #f1f1f1);
+}
+.f-shadow-dark:hover{
+	-webkit-filter: drop-shadow(8px 8px 10px #333); /* Safari 6.0 - 9.0 */
+    filter: drop-shadow(8px 8px 10px #333);
+}
+.f-hue:hover{
+	-webkit-filter: hue-rotate(90deg); /* Safari 6.0 - 9.0 */
+    filter: hue-rotate(90deg);
+}
+.f-invert:hover{
+	-webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
+    filter: invert(100%);
+}
+.f-opacity:hover{
+	-webkit-filter: opacity(50%); /* Safari 6.0 - 9.0 */
+    filter: opacity(50%);
+}
+.f-sat:hover{
+	-webkit-filter: saturate(8); /* Safari 6.0 - 9.0 */
+    filter: saturate(8);
+}
+.f-sepia:hover{
+	-webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+    filter: sepia(100%);
+}
+.f-contrast:hover{
+	-webkit-filter: contrast(200%) brightness(150%); /* Safari 6.0 - 9.0 */
+    filter: contrast(200%) brightness(150%);
+}
+.f-none:hover{
+	-webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+
+/*----------------------
+ Positions
+----------------------*/
+.p-static{position:static;}
+.p-absolute{position:absolute;}
+.p-fixed{position:fixed;}
+.p-relative{position:relative;}
+.p-sticky{position:sticky;}/* sample=> top:0; */
+
+/*----------------------
+ Back to Top Button
+----------------------*/
+
+.backtop{
+	margin-top:100%;
+	background:hsla(0,50%,100%,.5);
+	position:fixed;
+	content:"TOP";
+	width:120px;
+	height:120px;
+	bottom:50px;
+	right:50px;
+	display:block;
+}
+
+/*----------------------
+ User Select
+----------------------*/
+
+.select-none{
+	-webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.select-auto{
+	-webkit-user-select: auto; /* Chrome, Opera, Safari */
+    -moz-user-select: auto; /* Firefox 2+ */
+    -ms-user-select: auto; /* IE 10+ */
+    user-select: auto; /* Standard syntax */
+}
+
+.select-text{
+	-webkit-user-select: text; /* Chrome, Opera, Safari */
+    -moz-user-select: text; /* Firefox 2+ */
+    -ms-user-select: text; /* IE 10+ */
+    user-select: text; /* Standard syntax */
+}
+
+.select-all{
+	-webkit-user-select: all; /* Chrome, Opera, Safari */
+    -moz-user-select: all; /* Firefox 2+ */
+    -ms-user-select: all; /* IE 10+ */
+    user-select: all; /* Standard syntax */
+}
+
+/*----------------------
+ Template Of Web View
+----------------------*/
+/* HTML5 */
+*{}
+:root {background#ffffff;}
+header{}
+header h1{}
+header nav{}
+#wrap{}
+main{}
+main section{}
+main section header{}
+main section article{}
+aside{}
+footer{}
+footer address{}
+footer small{}
