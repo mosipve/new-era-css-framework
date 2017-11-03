@@ -1,6 +1,6 @@
 ### new era css framework
 <h1> New ERA </h1>
-<hr>
+
 <br />
 <ul>
   <li> <u>free</u> to use </li>
@@ -15,3 +15,4 @@
   <li> <a href="#">sample`s</a> </li>
   <li> <a href="#">feauture`s</a> </li>
 </ul>
+<hr>
