@@ -1,8 +1,6 @@
-# new-era-css-framework
-new era css framework
-
-<hr>
+### new era css framework
 <h1> New ERA </h1>
+<hr>
 <br />
 <ul>
   <li> <u>free</u> to use </li>
