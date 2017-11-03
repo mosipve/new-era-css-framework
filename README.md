@@ -11,7 +11,7 @@ new era css framework
   <li> great idea`s </li>
   <br />
   <b> Document </b>
-  <li> <a href="#">how to use</a> </li>
+  <li> <a href="#" title="how to make a web by me">how to use</a> </li>
   <li> <a href="#">version`s</a> </li>
   <li> <a href="#">update`s</a> </li>
   <li> <a href="#">sample`s</a> </li>
